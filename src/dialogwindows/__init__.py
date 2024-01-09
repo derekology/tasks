@@ -1,0 +1,8 @@
+TASK_NAME_FIELD_LABEL: str = "Task Name"
+ESTIMATED_HOURS_FIELD_LABEL: str = "Est. Time"
+ACTUAL_HOURS_FIELD_LABEL: str = "Act. Time"
+ADD_BUTTON_LABEL: str = "Add Task"
+SAVE_BUTTON_LABEL: str = "Save Task"
+CONFIRM_BUTTON_LABEL: str = "OK"
+EXIT_BUTTON_LABEL: str = "Exit"
+FLOAT_VALIDATION_REGEX: str = r"[0-9]+(\.[0-9]+)?"
