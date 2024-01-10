@@ -112,12 +112,12 @@ class TasksModel(AbstractSubject):
                                     )
 
         elif taskAction == TaskActionEnum.MOVE_ALL:
-            for task in self.taskList[taskSection.name]:
+            while len(self.taskList[taskSection.name]) > 0:
                 self.modifyTask(taskAction=TaskActionEnum.MOVE,
                                 taskSection=taskSection,
                                 newTaskSection=kwargs["newTaskSection"],
                                 targetTaskSections=[taskSection, kwargs["newTaskSection"]],
-                                taskId=task.id)
+                                taskId=self.taskList[taskSection.name][0].id)
 
         self.sortTaskList()
         self.populateTaskListViews(targetTaskSections=targetTaskSections)
